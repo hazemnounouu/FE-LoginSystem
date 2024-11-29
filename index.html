@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@400;700&family=Pacifico&family=Righteous&display=swap" rel="stylesheet">
+  
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./css/all.min.css">
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/media.css">
+</head>
+<body>
+  
+<section id="signUp">
+  <div class="container d-flex justify-content-center my-5">
+    <div class="wholeDiv  d-flex flex-column justify-content-center align-items-center border-4 border-black">
+      <h1 class="pt-5">
+        Smart Login System
+      </h1>
+      <div class="formInputs py-2">
+        <div class="mb-3">
+          <input type="text" class="form-control" id="userEmail" placeholder="Enter your email">
+        </div>
+        <div class="mb-3">
+          <input type="password" class="form-control" id="userPassword" placeholder="Enter password">
+        </div>
+      </div>
+      <div id="alertDiv" class="text-center">
+      </div>
+      <div class="formButton py-2">
+        <button id="signUpButton" class="btn w-100" >Log In</button>
+      </div>
+      <p class="text-white pt-2 pb-5">Don't have an account? <a id="aLink" class="text-white" href="#">Sign Up</a></p>
+      
+    </div>
+  </div>
+</section>
+  
+<script src="./script/script.js"></script>
+</body>
+</html>

@@ -3,6 +3,7 @@ var signUpButton = document.getElementById('signUpButton');
 var userName = document.getElementById('userName');
 var userEmail = document.getElementById('userEmail');
 var userPassword = document.getElementById('userPassword');
+var aLinkButton = document.getElementById('aLink')
 var emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
 var userNameRegex = /^[a-zA-Z0-9]{1,24}$/;
 var passwordRegex = /^(?=.*[A-Z])(?=.*[!@#$%^&*(),.?":{}|<>])[a-zA-Z0-9!@#$%^&*(),.?":{}|<>]{6,}$/;
@@ -18,6 +19,7 @@ else{
 //FUNCTIONS
 
 signUpButton.addEventListener('click',signUpValidation);
+aLinkButton.addEventListener('click',goSignIn)
 
 function signUpValidation(){
     var cartona=""
@@ -31,19 +33,14 @@ function signUpValidation(){
                 email: userEmail.value,
                 password: userPassword.value
             };
-    
-            // Push the new user object to userList
             userList.push(tempList);
-    
-            // Save the updated user list in localStorage
             localStorage.setItem('users', JSON.stringify(userList));
-    
-            // Display success message
             const cartona = `<p class="text-success">SUCCESS, ACCOUNT CREATED!</p>`;
             document.getElementById('alertDiv').innerHTML = cartona;
+            resetInputs()
         } else {
             // If the email already exists, display an error message
-            const cartona = `<p class="text-danger">ERROR: Email already exists!</p>`;
+            const cartona = `<p class="text-danger">Email already EXISTS!</p>`;
             document.getElementById('alertDiv').innerHTML = cartona;
         }
     }
@@ -110,6 +107,15 @@ function EmailExist(value){
             
         }
     }
-console.log("ANA HENA");
 
+}
+
+function resetInputs(){
+    userEmail.value=""
+    userName.value=""
+    userPassword.value=""
+}
+
+function goSignIn(){
+    window.location.href = "index.html"
 }
