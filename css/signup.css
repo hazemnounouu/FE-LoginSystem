@@ -1,0 +1,89 @@
+:root {
+    --main-color: #17A2B8;
+    --bgcolor : #24353F;
+    --input-color : #B6B6B6;
+  }
+body{
+    background-color: var(--bgcolor);
+}
+h1{
+    font-family: sans-serif;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 48px;
+    color: var(--main-color);
+}
+p{
+    font-family: sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px; 
+}
+/* LAYOUT CSS */
+.wholeDiv{
+    width: 65%;
+    box-shadow: -5px 2px 54px -9px rgba(0, 0, 0, 1);
+    background-color: var(--bgcolor);
+}
+
+/* FORM CSS */
+.formInputs{
+    width: 90%;
+}
+.formInputs input{
+    background-color: transparent;
+    border-color: #dee2e6;
+    color: white;
+}
+.formInputs input:focus{
+    background-color: transparent;
+    color: white;
+}   
+.formInputs ::placeholder{
+    color: var(--input-color);
+    font-family: sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+}
+/* FORM CSS ENDD */
+
+/* BUTTON CSS */
+.formButton{
+    width: 90%;
+}
+.btn{
+    font-family: sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    background-color: transparent;
+    border:  1px solid transparent;
+    border-color: var(--main-color);
+    color: var(--main-color);
+    transition: all 0.3s;
+}
+.btn:hover{
+    background-color: var(--main-color);
+    color: white;
+}
+
+/* BUTTON CSS ENDD */
+
+/* A LINKS CSS */
+
+#aLink{
+    text-decoration: none;
+    transition: all 0.2s;
+}
+#aLink:hover{
+    text-decoration: underline;
+}
+
+
+/* A LINKS CSS ENDDDDD */
+
+
+
+
+
