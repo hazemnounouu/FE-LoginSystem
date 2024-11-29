@@ -47,7 +47,8 @@ function EmailExist(){
           email:userList[i].email,
           password:userList[i].password
         }
-        logUser.push(tempList)        
+        logUser.push(tempList)  
+        localStorage.setItem('log',JSON.stringify(logUser))      
            cartona = `<p class="text-danger">THIS EMAIL EXISTS!</p>`
            document.getElementById('alertDiv').innerHTML= cartona
            return true
