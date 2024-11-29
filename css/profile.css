@@ -1,0 +1,46 @@
+:root {
+    --main-color: #17A2B8;
+    --bgcolor : #24353F;
+    --input-color : #B6B6B6;
+    --button-color : #FFC107;
+  }
+body{
+    background-color: var(--bgcolor);
+}
+h1{
+    font-family: sans-serif;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 48px;
+    color: var(--main-color)
+}
+h2{
+    font-family: sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    color: #FFFCF9;
+}
+#profile{
+    box-shadow: -5px 2px 54px -9px rgba(0, 0, 0, 1);
+}
+.btn{
+    font-family: sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 8px;
+    background-color: transparent;
+    color: var(--input-color);
+    border:  1px solid transparent;
+    border-color: var(--button-color);
+    transition: 0.2s;
+}
+.btn:hover{
+    background-color: var(--button-color);
+    color: white;
+}
+#welcomeDiv{
+    box-shadow: -5px 2px 54px -9px rgba(0, 0, 0, 1);
+    height: 15%;
+    background-color: #24353F;
+}
